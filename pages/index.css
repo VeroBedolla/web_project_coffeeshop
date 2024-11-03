@@ -169,8 +169,6 @@
   color: white;
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
-  padding-bottom: 120px;
 }
 .reservation__input {
   border-radius: 4px;
@@ -191,6 +189,8 @@
   font-size: 44px;
   line-height: 52px;
   color: #000000;
+  margin-top: 100px;
+  margin-bottom: 80px;
 }
 
 .reservation__fieldset {
@@ -200,7 +200,6 @@
   justify-content: center;
   margin: auto;
   margin-bottom: 120px;
-  margin-top: 80px;
   border: 0;
 }
 
