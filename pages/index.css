@@ -189,8 +189,7 @@
   font-size: 44px;
   line-height: 52px;
   color: #000000;
-  margin-top: 100px;
-  margin-bottom: 80px;
+  margin: 100 auto 80px Auto;
 }
 
 .reservation__fieldset {
@@ -199,7 +198,6 @@
   max-width: 385px;
   justify-content: center;
   margin: auto;
-  margin-bottom: 120px;
   border: 0;
 }
 
