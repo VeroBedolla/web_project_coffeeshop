@@ -35,7 +35,7 @@
               <a class="nav__link" href="#reservation">Reserva una mesa</a>
             </li>
             <li>
-              <a class="nav__link" href="#">Contactos</a>
+              <a class="nav__link" href="#contacts">Contactos</a>
             </li>
           </ul>
         </nav>
@@ -104,64 +104,101 @@
           </div>
         </section>
         <section class="reservation" id="reservation">
-          <h2 class="reservation__title">Reservar una mesa</h2>
-          <form class="form reservation__form">
-            <fieldset class="reservation__fieldset">
-              <label for="Nombre" class="reservation__label">Nombre *</label>
-              <input
-                type="text"
-                placeholder="Nombre"
-                required
-                class="reservation__input"
-                id="Nombre"
-              />
-              <label for="comensales" class="reservation__label"
-                >Numero de Comensales *</label
-              >
-              <input
-                type="number"
-                placeholder="1-8"
-                required
-                class="reservation__input"
-                max="8"
-                min="1"
-                id="comensales"
-              />
-              <label for="fecha" class="reservation__label"
-                >Fecha y Hora *</label
-              >
-              <input
-                type="datetime-local"
-                required
-                class="reservation__input"
-                id="fecha"
-              />
-              <label for="email" class="reservation__label"
-                >Tu Correo Electronico *</label
-              >
-              <input
-                type="email"
-                placeholder="email@email.com"
-                required
-                class="reservation__input"
-                id="email"
-              />
-              <fieldset class="reservation__container">
-                <button type="submit" class="reservation__button">
-                  Reservar una Mesa
+          <div class="reservation__content">
+            <h2 class="reservation__title">Reservar una mesa</h2>
+            <form class="reservation__form form">
+              <fieldset class="form__fieldset fieldset">
+                <label class="form__label" for="name">Nombre *</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  placeholder="Nombre"
+                  id="name"
+                  required
+                />
+
+                <label class="form__label" for="customers"
+                  >Número de comensales *</label
+                >
+                <input
+                  class="form__input"
+                  type="number"
+                  placeholder="1-8"
+                  id="customers"
+                  required
+                />
+
+                <label class="form__label" for="date">Fecha y hora *</label>
+                <input
+                  class="form__input"
+                  type="date"
+                  placeholder="dd/mm/aaaa"
+                  id="date"
+                  required
+                />
+
+                <label class="form__label" for="email"
+                  >Tu correo electrónico *</label
+                >
+                <input
+                  class="form__input"
+                  type="email"
+                  placeholder="email@email.com"
+                  id="email"
+                  required
+                />
+
+                <button class="form__button" type="submit">
+                  Reservar una mesa
                 </button>
+
+                <label class="form__label form__checkbox-centered" for="terms"
+                  ><input
+                    class="form__checkbox"
+                    type="checkbox"
+                    id="terms"
+                    required
+                  />Acepto los términos de uso</label
+                >
               </fieldset>
-              <fieldset
-                class="reservation__container reservation__container-checkbox"
-              >
-                <input type="checkbox" required />
-                <p>Acepto los términos de uso</p>
-              </fieldset>
-            </fieldset>
-          </form>
+            </form>
+          </div>
         </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer" id="contacts">
+        <div class="footer__content">
+          <img
+            class="footer__logo"
+            src="./images/logo_coffeeshop_light.svg"
+            alt="logo triple espresso en color blanco"
+          />
+          <div class="footer__circle"></div>
+          <div class="footer__social">
+            <h3 class="footer__social-heading">Redes sociales</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__social-link">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/facebook_white.svg"
+                    alt="Logo de Facebook en color blanco"
+                  />Facebook
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__social-link">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/instagram_white.svg"
+                    alt="Logo de Instagram en color blanco"
+                  />Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="footer__copyright">Veronica Bedolla Carrillo</p>
+      </footer>
     </div>
   </body>
 </html>
